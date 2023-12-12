@@ -1,16 +1,13 @@
 import '~/styles/style.css';
 import '~/styles/main.scss';
-import './jsx';
 
-import { App } from 'ovee.js';
+import { createApp } from 'ovee.js';
 
 import components from './components';
+import modules from './modules';
 
-console.log('keke');
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+const root = document.getElementById('app')!;
+const app = createApp().components(components).useMany(modules);
 
-const root = document.getElementById('app');
-const app = new App({
-	components,
-});
-
-app.run(root as any);
+app.run(root);

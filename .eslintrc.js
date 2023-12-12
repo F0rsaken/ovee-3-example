@@ -20,7 +20,7 @@ module.exports = {
 		'plugin:prettier/recommended',
 	],
 
-	ignorePatterns: ['node_modules'],
+	ignorePatterns: ['node_modules', '**/*.html'],
 
 	rules: {
 		'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',

@@ -1,5 +1,7 @@
-import { MainView } from "@/components/MainView";
+import { MainView } from './MainView';
+import { TestTemplate } from './TestTemplate';
 
-export default [
-    MainView
-];
+export default {
+	MainView,
+	TestTemplate,
+};

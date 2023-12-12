@@ -2,6 +2,6 @@
     "plugins": [
         ["@babel/plugin-proposal-decorators", { "legacy": true }],
         "@babel/plugin-proposal-class-properties",
-        ["@babel/plugin-transform-react-jsx", { "runtime": "automatic", "importSource": "@/jsx" }]
+        ["@babel/plugin-transform-react-jsx", { "runtime": "automatic", "importSource": "ovee.js" }]
     ]
 }

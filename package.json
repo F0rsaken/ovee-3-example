@@ -1,5 +1,5 @@
 {
-  "name": "ovee-starter",
+  "name": "ovee-3",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -30,7 +30,6 @@
   },
   "dependencies": {
     "gsap": "^3.11.3",
-    "lit-html": "^2.5.0",
-    "ovee.js": "^2.2.3"
+    "ovee.js": "^3.0.0-alpha.0"
   }
 }
