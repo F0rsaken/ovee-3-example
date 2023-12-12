@@ -1441,9 +1441,9 @@ optionator@^0.9.1:
     word-wrap "^1.2.3"
 
 ovee.js@^3.0.0-alpha.0:
-  version "3.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/ovee.js/-/ovee.js-3.0.0-alpha.0.tgz#19a816e54ca41e491435b51a852ca13c3601f446"
-  integrity sha512-3qgf6yhs5EIQYSqvUVYI6cxuWxDcLWDudBkGidEt+E1yF600rzQmONPYCrgtnm+d62b/obf1XRFPbepxuXeKfQ==
+  version "3.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/ovee.js/-/ovee.js-3.0.0-alpha.1.tgz#5841cfe69d8403e1f04d6c34e6071539be2eed51"
+  integrity sha512-v4xS9zh4XW9XaaYBNG+kupiRC4jXcqY1phZNUvwWa7la26Km98dbVc3aojb+LyAHIcARebRAj4YvJjKjLaP2wA==
   dependencies:
     "@vue/reactivity" "^3.2.6"
     "@vue/runtime-core" "^3.2.6"

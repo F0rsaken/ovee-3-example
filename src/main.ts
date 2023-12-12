@@ -8,6 +8,5 @@ import modules from './modules';
 
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 const root = document.getElementById('app')!;
-const app = createApp().components(components).useMany(modules);
 
-app.run(root);
+createApp().components(components).useMany(modules).run(root);

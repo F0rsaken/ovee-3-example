@@ -10,4 +10,10 @@ export const TestModule = defineModule(() => {
 		},
 		{ passive: true }
 	);
+
+	return {
+		foo: () => {
+			console.log('module foo');
+		},
+	};
 });
