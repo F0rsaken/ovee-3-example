@@ -1,15 +1,23 @@
-import { defineModule, useApp } from 'ovee.js';
+import { defineModule, onDestroy, onInit, useApp } from 'ovee.js';
 
 export const TestModule = defineModule(() => {
-	const { $on } = useApp();
+	const app = useApp();
 
-	$on(
+	app.$on(
 		'resize',
 		() => {
 			console.log(`new window size: ${window.innerWidth}x${window.innerHeight}`);
 		},
 		{ passive: true }
 	);
+
+	onInit(() => {
+		console.log('[TestModule] onInit');
+	});
+
+	onDestroy(() => {
+		console.log('[TestModule] onDestroy');
+	});
 
 	return {
 		foo: () => {

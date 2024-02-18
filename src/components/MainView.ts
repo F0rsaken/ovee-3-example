@@ -12,11 +12,8 @@ import {
 
 import { TestModule } from '@/modules/Test';
 
-import { TestTemplate } from './TestTemplate';
-
-export const MainView = defineComponent<HTMLElement>((element, ctx) => {
-	console.log('-> setup', element, ctx); // you can use `useComponent` as an alternative
-
+export const MainView = defineComponent<HTMLElement>(() => {
+	console.log('[setup] MainView');
 	const id = useAttribute('id');
 	const dataTest = useDataAttr('test');
 	const heading = useQuerySelector<HTMLHeadingElement>('h1');
@@ -26,9 +23,6 @@ export const MainView = defineComponent<HTMLElement>((element, ctx) => {
 
 	testModule.foo();
 
-	// you can use components as a composables
-	const templateComponent = TestTemplate(element, ctx);
-
 	onBeforeMount(() => {
 		console.log('-> before mount');
 		console.log('--- id', id.value);
@@ -36,8 +30,6 @@ export const MainView = defineComponent<HTMLElement>((element, ctx) => {
 		console.log('--- heading', heading.value);
 		console.log('--- p', pRef.value);
 		console.log('--- clientWidth', clientWidth.value);
-
-		templateComponent.bummpCounter();
 	});
 
 	onMounted(() => {
@@ -49,7 +41,5 @@ export const MainView = defineComponent<HTMLElement>((element, ctx) => {
 		console.log('--- heading', heading.value);
 		console.log('--- p', pRef.value);
 		console.log('--- clientWidth', clientWidth.value);
-
-		templateComponent.bummpCounter();
 	});
 });
