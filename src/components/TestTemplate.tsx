@@ -25,7 +25,7 @@ export const TestTemplate = defineComponent(() => {
 				</OtherTemplate.jsx>
 
 				{/* if there is only default slot, we can pass only a function */}
-				<OtherTemplate.jsx key={counter.value}>
+				<OtherTemplate.jsx>
 					{() => `Counter value from function slot: ${counter.value}`}
 				</OtherTemplate.jsx>
 			</>
